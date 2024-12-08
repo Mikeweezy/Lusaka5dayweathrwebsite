@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lusaka Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <h2>Lusaka Weather App</h2>
+
+    <div id="search-container">
+        <input type="text" id="city-input" placeholder="Enter city name...">
+        <button id="search-button">Search</button>
+        <button id="view-favorites-button">View Favorites</button>
+    </div>
+
+    <div>
+        <label for="language-dropdown">Choose Language:</label>
+        <select id="language-dropdown">
+            <option value="en">English</option>
+            <option value="fr">French</option>
+            <option value="es">Spanish</option>
+            <option value="zh">Chinese</option>
+            <option value="ru">Russian</option>
+            <option value="ar">Arabic</option>
+        </select>
+    </div>
+
+    <div class="temperature-toggle">
+        <button id="toggleTempButton">Switch to Fahrenheit</button>
+    </div>
+
+    <div class="favorite-cities">
+        <h3>Favorite Cities</h3>
+        <input type="text" id="new-city" placeholder="Add a new city">
+        <button id="add-city-button">Add</button>
+        <ul id="city-list"></ul>
+    </div>
+
+    <div id="weather-container">
+        <h2 id="city-name"></h2>
+        <p id="local-time"></p>
+        <img id="weather-icon" src="" alt="Weather Icon">
+        <p id="temperature"></p>
+        <p id="weather-condition"></p>
+        <p id="humidity"></p>
+        <p id="wind-speed"></p>
+    </div>
+
+    <div id="map-container">
+        <h3>Satellite Map</h3>
+        <div id="map" style="height: 500px;"></div>
+    </div>
+
+    <div id="forecast-container"></div>
+
+    <footer>
+        <ul style="list-style-type: none; padding: 0; display: inline-block;">
+            <li><a href="http://www.icuzambia.net" target="_blank">ICU Zambia</a></li>
+            <li><a href="https://www.zrdc.org" target="_blank">ZRDC</a></li>
+            <li><a href="https://github.com/Mikeweezy" target="_blank">github</a></li>
+        </ul>
+
+        <div class="copyright">
+            Lusaka Weather App. All Rights Reserved. Designed and Maintained By MIKE HANANKUNI, SIN:2401861992
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
